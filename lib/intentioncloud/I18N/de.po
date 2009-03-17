@@ -1,0 +1,175 @@
+﻿msgid "description"
+msgstr "Beschreibung"
+
+msgid "last_clouds"
+msgstr "letzte clouds"
+
+msgid "latest_news"
+msgstr "letzte nachrichten"
+
+msgid "our_cloud"
+msgstr "cloud der Intention Cloud"
+
+msgid "our_cloud_link"
+msgstr "cloud der Intention Cloud"
+
+msgid "random"
+msgstr "zufällige cloud"
+
+msgid "langtxt"
+msgstr "sprache wählen :"
+
+msgid "cloudtitle"
+msgstr "die Cloud sieht aus wie"
+
+msgid "permalinkstr"
+msgstr "diese cloud mit einem <b>permalink</b> speichern"
+
+msgid "showbyemail"
+msgstr "diese cloud einem freund zeigen"
+
+msgid "closecloud"
+msgstr "eine brise kommt auf"
+
+msgid "isee"
+msgstr "ich sehe ..."
+
+msgid "rerandom"
+msgstr "lassen sie den wind mit den wolken spielen..."
+
+msgid "intention"
+msgstr "gib deinen intention seed ein:"
+
+msgid "seebutton"
+msgstr "zeigen"
+
+msgid "truncation"
+msgstr "trunkierung"
+
+msgid "shortexplain"
+msgstr "Die Intention Cloud stellt die assoziierten Keywörter der bei Google benutzten Search Strings dar, also die Intention.<br /> <br />Das Cloud Formular ermöglicht das einfache Erkennen des Gewichts der verschiedenen komplementären Keywörter."
+
+msgid "fluffier"
+msgstr "weichere clouds"
+
+msgid "hisemail"
+msgstr "die e-mail adresse des freundes"
+
+msgid "yourname"
+msgstr "ihr name"
+
+msgid "add_txt"
+msgstr "kommentare hinzufügen"
+
+msgid "emailsend"
+msgstr "gently blow"
+
+msgid "input_error"
+msgstr "falsche eingabe"
+
+msgid "name_error"
+msgstr "bitte geben sie ihren namen ein"
+
+msgid "email_error"
+msgstr "ungültige e-mail adresse"
+
+msgid "mail_gone"
+msgstr "die mail wurde verschickt, vom wind getragen"
+
+msgid "whatpar1"
+msgstr "Die Intention Cloud ist eine Webapplikation, die von Perl- und AJAX-Technologien unterstützt wird  und bei der Suchanfragen von Suchmaschinen gesammelt und in einem intuitiven Output unter Benutzung von gewichteten Listen, auch <em>Tag Clouds</em> genannt, darstellt werden.<br />Ob zum Vergnügen und  aus Neugier oder zu ernsthaften Zwecken, die Cloud wird dabei helfen, die Absichten von Millionen Menschen zu erkunden. Gib den Anfang einer Suchanfrage ein, und beobachte, wie sich Keywörter zusammenfügen und einen virtuellen Zeitgeist bilden."
+
+msgid "what"
+msgstr "was"
+
+msgid "whath1"
+msgstr "Datenbank der Intention + Tag Cloud = Intention Cloud"
+
+msgid "whatpar2"
+msgstr "Die Cloud ist das Ergebnis eines Mashups zwischen dem Konzept der \"Datenbank der Intentionen\" und der Visualisierung von Tag Clouds. Die derzeitige live Engine der Intention Cloud sammelt Daten des Google Suggest Services, wird aber in der Zukunft erweitert werden, um andere Datenbanken zu integrieren."
+
+msgid "whatdbi"
+msgstr "Die Datenbank der Intentionen"
+
+msgid "whatpar3"
+msgstr "wurde zuerst durch den Journalisten <a href=\"http://en.wikipedia.org/wiki/John_Battelle\">John Battelle</a>, Autor des Buches  \"<em>The Search: How Google and Its Rivals Rewrote the Rules of Business and Transformed Our Culture</em>\" (ISBN: <a href=\"http://en.wikipedia.org/w/index.php?title=Special:Booksources&isbn=1591840880\">1591840880</a> das Buch wurde noch nicht ins Deutsche übersetzt: Die Suche: Wie Google und seine Rivalen die Geschäftsregeln  umgeschrieben und unsere Kultur verändert haben).  In einem Eintrag auf seinem Blog (<a href=\"http://battellemedia.com/archives/000063.php\">November 13th 2003</a>) definierte er dieses Konzept wie folgt:"
+
+
+msgid "whatpar4"
+msgstr "Die Gesamtsumme aller jemals eingegeben Suchbegriffe, aller jemals gelieferten Ergebnislisten, und sämtlicher daraus resultierender Pfade. <br />Diese Daten sind  vielerorts vorhanden, aber an drei oder vier Stellen häuft sich eine besonders grosse Datenmenge (d.h. MSN, Google und Yahoo). Diese Information repräsentiert, in ihrer Gesamtheit, einen Platzhalter für die Absichten der Menschheit – eine riesige Datenbank von Sehnsüchten, Bedürfnissen, Verlangen  und Vorlieben, die entdeckt, ??, archiviert, überwacht und mit allen möglichen Zielen ausgeschöpft werden können. Solch ein Bestie hat noch nie in der Geschichte der Kultur existiert, aber man kann fast davon ausgehen, dass sie ab dem heutigen Tag exponentiell wächst. Dieses Artefakt kann uns Unglaubliches darüber berichten, wer wir <a href=\"http://www.intention-cloud.net/?intention=we+are\">sind</a> und was wir als Kultur <a href=\"http://www.intention-cloud.net/?intention=we+want\">wollen</a>. Und es hat auch das Potential dazu, in genauso unglaublicher Art und <a href=\"http://www.google.com/search?q=patriot+act\">Weise missbraucht zu werden</a>."
+
+
+msgid "whatpar5"
+msgstr "Der bekannteste Weg für die Allgemeinheit, einen Einblick in die Absichten der Suchenden zu erhalten, ist es, die sehr begrenzten <a href="http://www.google.com/press/zeitgeist.html">Zeitgeist</a> Seiten zu durchforsten, oder die (eher bescheidenen) <a href="http://current.tv/google">Google Current Shows</a> anzusehen. Da ein grosser Teil der Einnahmen Googles durch das Adwords Anzeigenprogramm generiert wird - die hauptsächliche Art und Weise, ihre Datenbank der Intentionens in Geld umzusetzen -  können Anzeigenkunden auch Suggestion Tools (die <a href="https://adwords.google.com/select/KeywordSandbox">Keyword Sandbox</a> zum Beispiel) benutzen um sorgfältig auszuwählen, bei welchen Begriffen ihre Anzeigen erscheinen sollen, was vom aufgezeichneten und vorausgesagten Traffic dieser Suchanfragen abhängt.<br /><br />Das erste Modul, das von der Intention Cloud benutzt wird, um Intentionen einzuholen, sammelt  die Ergebnisse der Datenbank der Intentionen Googles durch einen weniger bekannten Service namens <a href="http://www.google.com/webhp?complete=1&hl=en">Google Suggest</a>, eein, der sich  noch im Beta-Frühstadium befindet (und das schon seit einer ganzen Weile...). Dieser Service soll in der Lage sein, zu \"erraten\" was gerade in das Suchfeld eingegeben wird und macht Vorschläge in Echtzeit, die in maximal zehn Suchanfragen gruppiert werden. Die dargestellte Metrik und der eingesetzte Algorithmus hinter diesem Tool sind recht undeutig, und die bereitgestellten FAQ bringt nicht mehr Licht in die Sache: \"Unsere Algorithmen benutzen eine Vielzahl von Informationen um die Suchanfragen vorherzusagen, die Benutzer am wahrscheinlichsten sehen wollen. Zum Beispiel benutzt Google Suggest Daten über die Gesamtpopularität verschiedener Suchanfragen, um die angebotene Verfeinerung ordnen zu können. Ein Beispiel dieser Art von Popularity Informationen  findet sich im Google Zeitgeist wieder.\"<br /><br /> Diese erste Version der Intention Cloud, die auf Google basiert, ist lediglich ein Beweis des Konzepts; in  naher Zukunft werden wir andere Services, die ähnliche, aber genauere Ergebnisse liefern, in verschiedene Datenbanken der Intentionen integrieren. Momentan ist dieser Google Suggest <em>Hack</em> ausreichend, um die verschiedenen Möglichkeiten eines solchen Tools zu testen.  "
+
+msgid "tagcloud"
+msgstr "Eine <em>Tag Cloud</em>"
+
+msgid "whatpar6"
+msgstr " (besser bekannt als eine gewichtete Liste  im Bereich des Visual Designs) ist eine visuelle Darstellung der auf Webseiten benutzten content tags. Oft werden häufiger benutzte Tags in einer grösseren Schriftgrösse oder anderweitig hervorgehoben dargestellt, wobei die Ergebnisse im allgemeinen in alphabetischer Reihenfolge gelistet werden. (...) Die erste Tag Cloud erschien bei Flickr, der Foto Sharing Webseite. Diese Anwendung basierte auf Jim Flanagans Search Referral Zeitgeist, einer Visualisierung von Webseitenreferrer. Tag clouds wurden unter anderem  auch durch Technorati bekannt gemacht. (Auszüge des <a href=\"http://en.wikipedia.org/wiki/Tag_cloud\">Wikipedia Artikels</a>).<br /><br />e Nuage d'Intentions utilise les listes pondérées pour afficher les différentes intentions récupérées depuis les bases de données... d'intentions. La métrique associée à chaque résultat, reflétant généralement sa popularité ou son trafic sur une période donnée, est utilisée pour calculer la taille de l'affichage de ce résultat. Le plus populaire, le plus gros. Les couleurs aident à distinguer intuitivement les poids des différents résultats."
+
+
+msgid "whatpar7"
+msgstr "Grundlegende Erklärungen zur Benutzung der Intention Cloud sind im Abschnitt <a href=\"/how\">wie</a> zu finden."
+
+
+msgid "howtitle1"
+msgstr "Wie funktioniert’s?"
+
+
+msgid "howpar1"
+msgstr "Die Benutzung ist recht einfach: Gib den Intention Seed in das Textfeld ein, klicke auf den \"Ansehen\" Button, warte und beobachte die Cloud, die sich daraus ergibt.<br /><br />Bei Standardeinstellung wird die Cloud Engine Google Suggest \"bruteforcen\" und den bereitgestellten Seed dazu benutzen, um jedes Mal bis zu zehn Ergebnisse zu erfassen. Aus diesem Grund wird die Engine bei Eingabe des Intention Seed [I want] Ergebnisse mit [i want a] und [I want b] einholen<br />Diese Ergebnisse werden dann in einem Tag Cloud Format mit der (fuzzy) \"results\" Metrik dargestellt, um sie für Permalinks zu archivieren und später dataminieren.<br /><br />Abhängig von der Engine, die für die Intention Cloud ausgewählt wurde, ergeben sich eine oder mehrere Möglichkeiten zur Auswahl. Zur Zeit unterstützt Google Suggest Trunkierungen. Wenn dieses Ankreuzfeld ausgewählt ist, wird der Cloud Generator Ergebnisse einer trunkierten Suchanfrage miteinbeziehen. Das bedeutet, dass der Intention Seed [meta] in Verbindung mit der Option ‘Trunkierung’ Ergebnisse wie \"metallica\" und \"Metapher\" liefern wird. <br /><br />Intention seeds werden auch in einer lokalen Datenbank archiviert, um unsere eigene Cloud der Anfragen (Meta-cloud) anzuzeigen. "
+
+
+msgid "howpar2"
+msgstr "<strong>Technische Details</strong><br /><br /><em>Frameworks :</em><ul><li><a href="http://catalyst.perl.org">Perl Catalyst framework</a>, für schnelle Entwicklungen, wie dieberuehmt-beruechtigte Ruby on Rails.</li><li>AJAX, für bessere Benutzerfreundlichkeit</li></ul><br />Da die Intention Cloud in Perl gecoded wurde, haben wir einige CPAN Module eingesetzt, wie z.B. :<ul><li>HTML::TagCloud von Leon Brocard (<a href=\"http://search.cpan.org/~lbrocard/HTML-TagCloud-0.32/lib/HTML/TagCloud.pm\">URL</a>)</li><li>WebService::Google::Suggest von Tatsuhiko Miyagawa(<a href=\"http://search.cpan.org/~miyagawa/WebService-Google-Suggest-0.01/lib/WebService/Google/Suggest.pm\">URL</a>)</li></ul>"
+
+
+msgid "source"
+msgstr "Quellen"
+
+msgid "howpar3"
+msgstr "<br /><br />Intention Cloud Quellen sind ein Produkt von Franck Cuny, veroeffentlicht unter der geaenderten BSD License.<br />Design und Bilder (c) Morgan Thomas.<br /><br />Download-Quellen: <ul><li>Latest stable version, local archive: <a href="http://www.intention-cloud.net/sources/intention-cloud.v0.8.zip">intention-cloud.v0.8.zip</a></li><li>Latest version, using subversion: <em>svn co https://breizhdev.net/subversion/scripts/WillCloud/</em></li></ul><br/><br/><br/><br/><br/><br/><br/><br/>"
+
+
+msgid "whytitle1"
+msgstr "Warum sollte ich die Intention Cloud benutzen? Zu welchem Zweck? "
+
+
+msgid "whypar1"
+msgstr "Weil du schon immer wissen wolltest, was andere Leute denken, oder nicht?<br /><br />Es gibt zahlreiche Möglichkeiten, die Intention Cloud zu benutzen, da diese Version der Could ein Experimentierfeld zum Spielen ist. Wozu man sie benutzt, hängt grösstenteils von jedem Einzelnen ab, da wir das ganze Einsatzpotential noch nicht entdeckt haben.<br /><br />Wir sind fest  davon überzeugt, dass die Cloud bei Aktivitäten im Bereich der Marktforschung, Marktanalyse, Suchmaschinenoptimierung, Recherche  etc. nützlich sein kann. Sie kann auch bei einer Recherche praktisch sein um einen schnellen Überlick darüber zu erhalten, wie ein bestimmtes Thema im allgemeinen von der Öffentlichkeit behandelt wird. Aber es macht auch einfach Spass, Clouds zu generieren, und kann sehr aufschlussreich sein. Oder traurig. Oder beides.<br /><br />"
+
+
+msgid "whytitle2"
+msgstr "Warum habt ihr das entwickelt?"
+
+msgid "why"
+msgstr "warum"
+
+msgid "whypar2"
+msgstr "Wir haben es für die Lulz gemacht!<br />Ah. ‘tschuldigung, dass war ein Versuch, ein bisschen Humor 2.0 einzubauen. ;)<br />Es weisst auch darauf hin,  dass unser Ansatz auf Neugier und Spass an der Freude basiert. Mashups von Services und Konzepten sind im Moment sehr beliebt, und sind eine der Säulen der sogenannten neuen Ära Web 2.0. Wir wollten einen Stein zum Gebäude hinzufuegen. Aber mit Stil.<br /><br />Das grundlegende Konzept stammt von unserem IRC Channel, wo wir einige Bots laufen lassen um On-the-fly Befehle zu beantworten,  wie zum Beispiel unsere urls direkt aufzunehmen und zu del.icio.us hizuzufügen, die Rankings unserer MMORPG Charaktere zu überprüfen, Suchanfragen bei Suchmaschinen zu stellen. Eines der Module, die wir entwickelt haben, holt Ergebnisse von Google Suggest ein, und wird duch den Befehl \"!suggest <em>keyword</em>\" ausgeführt. Die Tatsache, dass wir eine gewichtete Liste als Output dieses Tools hatten, führte zur Idee, die Ergebnisse unter Benutzung einer Tag Cloud- ähnlichem Entwurfsmusters zu formatieren.<br />Franck entwickelte einen Prototyp, mit dem viele Lulz spielten. Und wir wussten, dass es das Richtige war. Danach entwickelte unser Designer ein sehr gutes Verständnis für das Tag Cloud Konzept, und interpretierte es direkt. Er dachte sich ein sehr schönes Layout für das Tool aus und steckte sehr viel Energie hinein, um einen Sinn für Eleganz und Design in dieses sehr 2.0-beeinflusste Projekt.<br /><br />Wir möchten hierbei anmerken dass wir davon überzeugt sind, dass solche Tools von jedem benutzt werden sollten, um zu verstehen was Intentionen sind, was sie darstellen, und was Unternehmen, welche die riesige Datenbank der Intentionen besitzen, mit dieser tun können.<br />John Battelle schrieb in seinem Kapitel, in dem dieses Konzept eingeführt wird, etwas dass jeder lesen und verstehen sollte, um danach wieder einen Blick auf die Big Player der Webindustrie zu werfen. : \"Was will die Menschheit? Ein Unternehmen  errichten, dass diese Frage in allen möglichen Bedeutungsnuancen beantwortet, und das unlösbarste Rätsel des Marketings, der Wirtschaft, und wohl der menschlichen Kultur selbst wäre entschlüsselt.\"<br />Du kannst Google Current anschauen, und Dich einer Gehirnwäsche unterziehen, oder die Clouds beobachten, und dich entspannen. <br /><br />Hier sind wir nun, und geben unsere Intention Cloud frei, damit alle mit ihr experimentieren können, und beoachten die Reaktionen. Wir erwarten viele konstruktive Kritik und gute Ideen, die von diesem Prototyp ausgehen und freuen uns auf eure Kommentare (per email oder auf dem Intention Cloud Blog)."
+
+
+msgid "how"
+msgstr "wie"
+
+msgid "who"
+msgstr "wer"
+
+msgid "home"
+msgstr "home"
+
+msgid "news"
+msgstr "news"
+
+msgid "about"
+msgstr "über uns"
+
+msgid "links"
+msgstr "links"
+
+msgid "bzhblog"
+msgstr "blog breizhdev"
+
+msgid "csv"
+msgstr "diese Datei im csv Format exportieren"

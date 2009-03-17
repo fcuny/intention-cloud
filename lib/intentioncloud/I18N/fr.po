@@ -1,0 +1,174 @@
+﻿msgid "description"
+msgstr "Description"
+
+msgid "last_clouds"
+msgstr "derniers nuages"
+
+msgid "latest_news"
+msgstr "dernieres nouvelles"
+
+msgid "our_cloud"
+msgstr "notre méta-nuage"
+
+msgid "our_cloud_link"
+msgstr "méta-nuage d'intentions"
+
+msgid "random"
+msgstr "laissez-vous porter par le hasard"
+
+msgid "langtxt"
+msgstr "changez de langue"
+
+msgid "cloudtitle"
+msgstr "le nuage ressemble à"
+
+msgid "permalinkstr"
+msgstr "mémorisez ce nuage avec un <b>permalien</b>"
+
+msgid "showbyemail"
+msgstr "montrez ce nuage à un ami"
+
+msgid "closecloud"
+msgstr "une brise se lève"
+
+msgid "isee"
+msgstr "je vois ..."
+
+msgid "rerandom"
+msgstr "laissez vous porter au grès des vents..."
+
+msgid "intention"
+msgstr "entrez votre graine d'intention"
+
+msgid "seebutton"
+msgstr "voir"
+
+msgid "truncation"
+msgstr "troncature"
+
+msgid "shortexplain"
+msgstr "Le Nuage d'Intention rassemble les requêtes effectuées sur les moteurs de recherche et les affiche sous une forme intuitive.<br /> <br />La forme de nuage permet de reconnaître aisément le poids de chaque mot-clé. Plus une requête est populaire, plus elle apparait grande."
+
+msgid "fluffier"
+msgstr "autres nuages cotonneux"
+
+msgid "hisemail"
+msgstr "adresse courriel de votre ami"
+
+msgid "yourname"
+msgstr "votre nom"
+
+msgid "add_txt"
+msgstr "quelque chose à ajouter"
+
+msgid "emailsend"
+msgstr "gently blow"
+
+msgid "input_error"
+msgstr "entrée incorrecte"
+
+msgid "name_error"
+msgstr "veuillez préciser votre nom"
+
+msgid "email_error"
+msgstr "adresse courriel invalide"
+
+msgid "mail_gone"
+msgstr "le courriel est parti, porté par le vent.."
+
+msgid "whatpar1"
+msgstr "Le Nuage d'Intentions est une application web utilisant les technologies Perl et AJAX pour rassembler les requêtes effectuées sur les moteurs de recherche et les afficher sous une forme intuitive utilisant des listes pondérées, plus connues sous le nom de <em>tag cloud</em>.<br />Que vous l'utilisiez pour le plaisir et la curiosité ou pour des motifs plus sérieux, le Nuage vous aidera à explorer les intentions de millions d'âmes. Entrez le début d'une requête, et appréciez la vue des mots-clés s'associant pour former un <em>zeitgeist</em> visuel."
+
+msgid "what"
+msgstr "quoi"
+
+msgid "whath1"
+msgstr "Base de données d'Intentions + Tag Cloud = Nuage d'Intentions"
+
+msgid "whatpar2"
+msgstr "Le Nuage est le résultat du <em>mashup</em> du concept de \"Base de données d'Intentions\" et de la visualisation sous forme de nuage (\"Tag Cloud\"). Le moteur du Nuage d'Intentions récupère actuellement les données fournies par le service Google Suggest, d'autres bases de données d'intentions seront intégrées à terme."
+
+msgid "whatdbi"
+msgstr "La Base de données d'Intentions"
+
+msgid "whatpar3"
+msgstr "a été pointée en premier par le journaliste <a href=\"http://en.wikipedia.org/wiki/John_Battelle\">John Battelle</a>, auteur de \"<em>The Search: How Google and Its Rivals Rewrote the Rules of Business and Transformed Our Culture</em>\" (ISBN: <a href=\"http://en.wikipedia.org/w/index.php?title=Special:Booksources&isbn=1591840880\">1591840880</a>). Il a défini son concept dans une note sur son blog (<a href=\"http://battellemedia.com/archives/000063.php\">November 13th 2003</a>) de la façon suivante :"
+
+
+msgid "whatpar4"
+msgstr "L'agrégat résulte de chaque recherche écrite, chaque liste de résultats jamais offerte, et chaque chemin pris en résultat.<br />Elle réside en bien des endroits, mais trois ou quatre en particulier renferment un masse colossale de ces données (i.e. MSN, Google, et Yahoo). Cette information représente, sous forme agrégée, un récipient pour les intentions de l'humanité - une énorme base de données des désirs, besoins, souhaits et goûts qui peuvent être découverts, cités, archivés, pistés, et utilisés à toutes sortes de fins. Une telle bête n'a jamais existé auparavant dans l'histoire de la culture, mais il est pratiquement garanti qu'elle va dorénavant grandir exponentiellement. Cet artefact peut nous dire des choses extraordinaires à propose de qui <a href=\"http://www.intention-cloud.net/?intention=we+are\">nous sommes</a> et ce que <a href=\"http://www.intention-cloud.net/?intention=we+want\">nous voulons</a> comme culture. Et peut aussi être détourné <a href=\"http://www.google.com/search?q=patriot+act\">d'une manière tout aussi extraordinaire</a>."
+
+msgid "whatpar5"
+msgstr "Le moyen public le plus connu pour jeter un oeil dans les intentions des chercheurs est de brouter les pages du trés limité <a href="http://www.google.com/press/zeitgeist.html">Zeitgeist</a>, ou de regarder les show (merdiques) <a href="http://current.tv/google">Google Current</a>. Comme une grande partie des revenus de Google sont réalisés par le programme publicitaire AdWords, le principal moyen pour eux de monétiser leur base de données d'intentions, les publicitaires peuvent aussi utiliser des outils de suggestion (le <a href="https://adwords.google.com/select/KeywordSandbox">bac à sable des mots-clés</a> par exemple) pour choisir avec soin sur quels termes de recherche ils veulent voir leurs publicités apparaître, en fonction du traffic passé et prévu généré par ces recherches.<br /><br />Le premier module utilisé par le Nuage d'Intentions pour collecter lesdites depuis la base de données de Google utilise un service moins connu appelé <a href="http://www.google.com/webhp?complete=1&hl=en">Google Suggest</a>, encore en version beta (et ce depuis un long moment maintenant...). Ce service est censé 'deviner' ce que vous écrivez et offre des suggestions en temps réel, par groupes de dix requêtes au maximum. Les mesures affichées et l'algorithme utilisé par cet outil sont assez obscurs, et la FAQ n'éclaire pas vraiment sur ce sujet : \"Nos algorithmes utilisent une grande quantité d'information pour prédire les requêtes que les utilisateurs sont les plus susceptibles de vouloir voir. Par exemple, Google Suggest utilise des données sur la popularité globale de diverses recherches pour aider au classement des raffinements qu'il offre. Un exemple de ce type d'information sur la popularité peut être trouvé dans le Google Zeitgeist.\"<br /><br /> Cette première mouture du Nuage d'Intentions basé sur Google est simplement une preuve du concept, dans un futur proche nous intégrerons d'autres services qui donnent des résultats similaires mais plus précis sur de multiples bases de données d'intentions. Pour le moment, ce <em>hack</em> de Google Suggest est suffisant pour prouver les diverses possibilités d'un tel outil."
+
+msgid "tagcloud"
+msgstr "Un <em>Tag Cloud</em>"
+
+msgid "whatpar6"
+msgstr "(plus traditionnellement connu sous le nom de liste pondérée dans le champ du design visuel) est une représentation visuelle des tags de contenu utilisées sur un site web. Souvent, les tags les plus utilisés sont représentés avec une police plus grande ou autrement mise en forme, alors que l'ordre d'affichage est généralement alphabétique. (...) Le premier <em>tag cloud</em> est apparu sur Flickr, le site de partage de photos. Cette implémentation était basée sur le <em>Search Referral Zeitgeist</em> de Jim Flanagan, une visualisation des référants de sites webs. Les <em>tag clouds</em> ont aussi été popularisés par Technorati, entre autres. (extraits de <a href=\"http://en.wikipedia.org/wiki/Tag_cloud\">L'article sur Wikipedia (en anglais)</a>).<br /><br />Le Nuage d'Intentions utilise les listes pondérées pour afficher les différentes intentions récupérées depuis les bases de données... d'intentions. La métrique associée à chaque résultat, reflétant généralement sa popularité ou son trafic sur une période donnée, est utilisée pour calculer la taille de l'affichage de ce résultat. Le plus populaire, le plus gros. Les couleurs aident à distinguer intuitivement les poids des différents résultats."
+
+
+msgid "whatpar7"
+msgstr "Pour quelques explications basiques sur l'utilisation du Nuage d'Intentions, référez-vous � cla section <a href=\"/how\">comment</a>."
+
+
+msgid "howtitle1"
+msgstr "Comment ça marche ?"
+
+
+msgid "howpar1"
+msgstr "L'utilisation est assez simple : entrez votre graine d'intention dans le champ de saisie, appuyez sur le bouton \"Voir\", attendez, observez le nuage résultant.<br /><br />Dans son utilisation standard, le moteur du Nuage va <em>bruteforcer</em> Google Suggest en utilisant la graine fournie pour récupérer à chaque fois jusqu'à 10 résultats. Ainsi, si vous entrez la graine d'intention [je veux], le moteur ira chercher les résultats avec [je veux a] puis [je veux b] et caetera..<br />Les résultats sont ensuite affichés dans un format de <em>tag cloud</em> avec métrique \"floue\", et archivés pour les permaliens et l'analyse ultérieure.<br /><br />Selon le moteur sélectionné pour le Nuage d'Intentions, vous pourrez choisir entre diverses options. Actuellement, Google Suggest supporte seulement la troncature (mots incomplets). Quand la case est cochée, le générateur de nuage incluera les résultats récupérés avec une requête tronquée, i.e. la graine [meta] avec l'option troncature trouvera des résultats comme \"metallica\" ou \"metaphores\".<br /><br />Les graines d'intentions sont aussi archivées dans une base de données, pour pouvoir afficher notre propre nuage de nuages d'intentions (méta-nuage)."
+
+
+msgid "howpar2"
+msgstr "<strong>Détails techniques</strong><br /><br /><em>Frameworks :</em><ul><li><a href="http://catalyst.perl.org">Perl Catalyst framework</a>, pour des développements rapides, comme le célèbre Ruby On Rails.</li><li>AJAX, pour une meilleure et plus douce expérience à l'utilisation</li></ul><br />Le Nuage d'Intention étant codé en Perl, nous avons utilisé quelques modules CPAN :<ul><li>HTML::TagCloud par Leon Brocard (<a href=\"http://search.cpan.org/~lbrocard/HTML-TagCloud-0.32/lib/HTML/TagCloud.pm\">URL</a>)</li><li>WebService::Google::Suggest par Tatsuhiko Miyagawa(<a href=\"http://search.cpan.org/~miyagawa/WebService-Google-Suggest-0.01/lib/WebService/Google/Suggest.pm\">URL</a>)</li></ul>"
+
+
+msgid "source"
+msgstr "Sources"
+
+msgid "howpar3"
+msgstr "<br /><br />Les sources du Nuage d'Intentions sont un produit de Franck Cuny, distribués sous la license BSD modifiée.<br />Tout le design et les images sont (c) Morgan Thomas.<br /><br />Téléchargez les sources : <ul><li>Derniére version stable, archive locale : <a href="http://www.intention-cloud.net/sources/intention-cloud.v0.8.zip">intention-cloud.v0.8.zip</a></li><li>Derniére version, en utilisant subversion : <em>svn co https://breizhdev.net/subversion/scripts/WillCloud/</em></li></ul><br/><br/><br/><br/><br/><br/><br/><br/>"
+
+
+msgid "whytitle1"
+msgstr "Pourquoi utilise le Nuage d'Intentions ? à quoi bon ?"
+
+
+msgid "whypar1"
+msgstr "Parce que vous avez toujours voulu savoir ce que les autres pensaient, n'est-ce pas ?<br /><br />Il y a de nombreuses façons d'utiliser le Nuage d'Intentions, cette version du Nuage étant un terrain d'expériences et de jeu ouvert à tous. C'est à vous de savoir ce que vous pourrez en faire, car nous n'avons pas encore découvert toutes ses utilisations potentielles.<br /><br />Nous croyons fermement qu'il pourrait être utile pour des activités impliquant la recherche de marché, telles l'analyse de marché, l'optimisation pour les moteurs de recherche, les enquêtes, et caetera. Il peut aussi être très utile à un chercheur pour savoir comment tel sujet est généralement abordé par le public. C'est aussi purement un plaisir de générer des nuages, et cela peut parfois être signifiant. Ou drôle. Ou triste. Ou les trois.<br /><br />"
+
+
+msgid "whytitle2"
+msgstr "Pourquoi avez-vous créé ça ?"
+
+msgid "why"
+msgstr "pourquoi"
+
+msgid "whypar2"
+msgstr "On a fé sa pke C lol!!<br />Hm... désolé, c'était une tentative d'Humour2.0 ;)<br />Cela indique aussi que notre approche a été surtout orientée par la curiosité et le <em>fun</em>. Les <em>mashups</em> de services et de concepts sont à la mode, et sont un des piliers de la pseudo nouvelle ère appelée Web2.0. Nous voulions ajouter une pierre à l'édifice. Mais avec style.<br /><br />Le coeur du concept vient de notre canal IRC, où nous faisons tourner quelques bots pour diverses choses telles que capter au vol les urls et les stocker automatiquement sur del.icio.us, afficher les rangs de nos personnages de MMORPG, effectuer des recherches web, et caetera. Un des modules que nous avons créés prend les résultats de Google Suggest, via la commande \"!suggest <mot-clé>\". Le fait que nous obtenions une liste pondérée nous a conduit à l'idée de formater ces résultats en utilisant un '<em>tag cloud</em>'.<br />Franck a créé un prototype, et nous avons eu bien des lolz^H^H^H^Hjoies en jouant avec. Et nous savions que c'était du bon. Notre designer s'est alors penché sur le concept du <em>tag cloud</em> et l'a interprété littéralement. Il a imaginé une jolie mise en page, avec un grand effort pour amener du design et de la beauté dans ce projet tellement 2.0.<br /><br />Notez que nous pensons que de tels outils devraient être utilisés par tout le monde, pour comprendre ce que les Intentions sont, ce qu'elles représentent, et ce que les compagnies traitant les énormes Bases de données d'Intentions peuvent faire avec ça.<br />John Battelle a écrit dans son chapitre introduisant ce concept quelque chose que chacun devrait lire et comprendre, avant de regarder à nouveau les monstres de l'industrie du web : \"Qu'est-ce que le monde veut ? Bâtissez une compagnie qui répond à cette question dans toutes ses nuances, vous aurez résolu la plus insurmontable des énigmes du marketing, du commerce, et possiblement de la culture humaine elle-même.\"<br />Vous pouvez regarder Google Current, et bénéficier d'un lavage de cerveau, ou regarder les Nuages, et vous relaxer.<br /><br />Et nous voilà, publiant notre Nuage d'Intentions pour que tout un chacun l'essaye, et observe ce qu'il en sort. Nous espérons nombre critiques et bonnes idées suite à ce prototype, et attendons vos commentaires avec impatience (par courriel ou sur le blog du Nuage d'Intentions)."
+
+
+msgid "how"
+msgstr "comment"
+
+msgid "who"
+msgstr "qui"
+
+msgid "home"
+msgstr "accueil"
+
+msgid "news"
+msgstr "nouvelles"
+
+msgid "about"
+msgstr "a propos"
+
+msgid "links"
+msgstr "liens"
+
+msgid "bzhblog"
+msgstr "blog breizhdev"
+
+msgid "csv"
+msgstr "exportez le nuage au format csv"

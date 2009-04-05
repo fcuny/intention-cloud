@@ -4,11 +4,23 @@ use strict;
 use warnings;
 use parent 'Catalyst::Controller';
 
+sub old_cloud : Regex('^(\d{4})/(\d{2})/(\d{2})/(\w+)/(.*$)') {
+    my ( $self, $c ) = @_;
+    $c->stash->{ template } = 'cloud/old_cloud.tt';
+
+    my $cloud
+        = $c->model( 'DB::Search' )->find( { permalink => $c->req->path } );
+    if ( $cloud ) {
+        $c->stash( cloud => $cloud );
+    } else {
+    }
+}
+
 sub search : Local {
     my ( $self, $c ) = @_;
     $c->stash->{ template } = 'cloud/cloud.tt';
 
-    $c->model( 'Search' )->search($c);
+    $c->model( 'Search' )->search( $c );
 }
 
 sub random : Local {

@@ -56,6 +56,9 @@
 	
 	<div class="margegauche_bloc">
         [% c.localize('langtxt') %] :<br />
+        <a href="/lang/fr">Français</a><br />
+        <a href="/lang/en">English</a><br />
+        <a href="/lang/de">Deutsch</a><br />
 	</div>
 		
   </div>

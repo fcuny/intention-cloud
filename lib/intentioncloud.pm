@@ -10,18 +10,18 @@ use Catalyst::Runtime '5.70';
 #         -Debug: activates the debug mode for very useful log messages
 #   ConfigLoader: will load the configuration from a Config::General file in the
 #                 application's home directory
-# Static::Simple: will serve static files from the application's root 
+# Static::Simple: will serve static files from the application's root
 #                 directory
 
 use parent qw/Catalyst/;
 use Catalyst qw/
-                ConfigLoader
-                Static::Simple
-                I18N
-                /;
+    ConfigLoader
+    Static::Simple
+    I18N
+    /;
 our $VERSION = '0.01';
 
-# Configure the application. 
+# Configure the application.
 #
 # Note that settings in intentioncloud.conf (or other external
 # configuration file that you set up manually) take precedence
@@ -30,7 +30,9 @@ our $VERSION = '0.01';
 # with a external configuration file acting as an override for
 # local deployment.
 
-__PACKAGE__->config( name => 'intentioncloud' );
+__PACKAGE__->config(
+    name => 'intentioncloud',
+);
 
 # Start the application
 __PACKAGE__->setup();

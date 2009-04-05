@@ -8,6 +8,20 @@ use URI::Escape;
 
 sub search {
     my ( $self, $c ) = @_;
+
+    my $search = $c->req->params->{ q } . " ";
+    $c->stash( query => $search, dt => DateTime->now );
+
+    $c->stash(cloud_permalink => $c->stash->{dt}->ymd( '/' ) . '/'
+            . $c->req->params->{ engine } . '/'
+            . uri_escape( $c->req->params->{ q } ) );
+    my $cloud = $c->model( 'DB::Search' )
+        ->find( { permalink => $c->stash->{ cloud_permalink } } );
+    if ( $cloud ) {
+        $c->stash( cloud => $cloud->cloud );
+        return;
+    }
+
     if ( $c->req->params->{ engine } eq 'google' ) {
         $self->google_search( $c );
     }
@@ -19,8 +33,6 @@ sub google_search {
 
     my $cloud   = HTML::TagCloud->new();
     my $suggest = WebService::Google::Suggest->new();
-    my $search  = $c->req->params->{ q } . " ";
-    $c->stash( query => $search );
 
     my $suggests = 0;
     foreach ( $suggest->complete( $search ) ) {
@@ -30,7 +42,7 @@ sub google_search {
         }
     }
     if ( $suggests ) {
-        $c->stash( cloud => $cloud->html_and_css());
+        $c->stash( cloud => $cloud->html_and_css() );
     } else {
         $c->stash( no_suggest => "no suggestions :(" );
     }
@@ -38,19 +50,13 @@ sub google_search {
 
 sub save_search {
     my ( $self, $c ) = @_;
-    my $dt = DateTime->now;
-
-    my $permalink
-        = $dt->ymd( '/' ) . '/'
-        . $c->req->params->{ engine } . '/'
-        . uri_escape( $c->req->params->{ q } );
 
     $c->model( 'DB::Search' )->create(
         {   engine       => $c->req->params->{ engine },
-            cloud        => $c->stash->{ suggest },
-            date_created => $dt,
+            cloud        => $c->stash->{ cloud },
+            date_created => $c->stash->{dt},
             query        => $c->req->params->{ q },
-            permalink    => $permalink,
+            permalink    => $c->stash->{ cloud_permalink },
         }
     );
 }

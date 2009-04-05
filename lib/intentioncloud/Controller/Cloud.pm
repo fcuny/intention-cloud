@@ -28,7 +28,7 @@ sub random : Local {
     $c->stash->{ template } = 'cloud/random.tt';
 
     $c->stash( cloud => $c->model( 'DB::Search' )
-            ->find( {}, { order_by => [ 'random()' ] } ) );
+            ->find( {}, { order_by => [ 'rand()' ] } ) );
 }
 
 1;

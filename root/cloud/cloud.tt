@@ -1,5 +1,4 @@
 <div id="wrapper">
-[% IF suggest %]
     <div id="contenudroite_cloudtitle">2. [% c.localize('cloudtitle') %] "<i>[% query %]</i>"</div>
     <div id="contenudroite_cloudcontent">
 		
@@ -7,47 +6,5 @@
         > <a href="[% permalink %]">[% c.localize('permalinkstr') %]</a><br />
     </div>
 
-    <div id="cloud">[% suggest %]</div>
-		
-	[% ELSIF our_cloud %]
-	
-		<div id="contenudroite_cloudtitle">[% c.localize('isee') %]</div>
-		<div id="contenudroite_cloudcontent">
-		<div id="cloudcontent_options">
-			> [% c.prototype.link_to_remote(c.localize('closecloud'), {
-				url => '#',
-				complete => c.prototype.visual_effect('SlideUp',
-					'wrapper', 
-					{duration => 1.5}
-				),
-			}) %]<br />
-		</div>
-		<div id="cloud">[% our_cloud %]</div>
-	
-	[% ELSIF randomcloud %]
-	
-		<div id="contenudroite_cloudtitle">2. [% c.localize('cloudtitle') %] "<i>[% title_query %]</i>"</div>
-		<div id="contenudroite_cloudcontent">
-		
-	  	<div id="cloudcontent_options">
-			> <a href="[% permalink %]">[% c.localize('permalinkstr') %]</a><br>
-			> [% c.prototype.link_to_remote(c.localize('rerandom'), {
-				 update => 'view',
-				 url => urlrandom,
-				 complete =>  c.prototype.visual_effect('SlideDown','cloud',{duration => 1.5})
-			}) %]<br>
-			> <a href="[% base _ 'email/send' %]">[% c.localize('showbyemail') %]</a><br>
-			> [% c.prototype.link_to_remote(c.localize('closecloud'), {
-				url => '#',
-				complete => c.prototype.visual_effect('SlideUp',
-					'wrapper', 
-					{duration => 1.5}
-				),
-			}) %]<br />
-		</div>
-			
-		<div id="cloud">[% randomcloud %]</div>
-		
-	[% END %]
-[% END %]
+    <div id="cloud">[% cloud %]</div>
 </div>

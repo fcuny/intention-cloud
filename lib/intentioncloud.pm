@@ -15,6 +15,9 @@ use Catalyst::Runtime '5.70';
 
 use parent qw/Catalyst/;
 use Catalyst qw/
+    Session
+    Session::State::Cookie
+    Session::Store::FastMmap
     ConfigLoader
     Static::Simple
     I18N
@@ -31,7 +34,10 @@ our $VERSION = '0.01';
 # local deployment.
 
 __PACKAGE__->config(
-    name => 'intentioncloud',
+    name    => 'intentioncloud',
+    expires => 3600,
+    storage => '/tmp/session'
+
 );
 
 # Start the application

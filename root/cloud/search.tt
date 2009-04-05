@@ -10,7 +10,9 @@
 		    <img id="spinner" style="display:none;" src="[%base%]static/images/spinner.gif" alt="loading">
 		    <br>
 
-		    <select name="engine"></select>
+		    <select name="engine" id="engine">
+                <option value="google">google</option>
+            </select>
                 
 	  	    <input id="truncature" type="checkbox" name="truncation" value="1" class="truncationcheckbox" />
                 [% c.localize('truncation') %]
@@ -37,51 +39,35 @@
 		  [% c.localize('shortexplain') %]
 	  </div>
 	</td>
+
 	<td class="small"></td>
 	<td class="big">
 	  <div id="accueilcolonnes_colonnetop_bleu"></div>
 	  <div id="accueilcolonnes_colonnetitle_bleu">[% c.localize('fluffier') %] :</div>
 	  <div class="accueilcolonnes_colonnecontent">
+			> <a href="/cloud/random_cloud" id="random_cloud">[% c.localize('random') %]</a><br>
 	  </div>
 	  <div class="accueilcolonnes_colonnebottom">&nbsp;</div>
 	</td>
+
 	<td class="small"></td>
 	<td class="big">
 	  <div class="accueilcolonnes_colonnetop_vert"></div>
 	  <div class="accueilcolonnes_colonnetitle_vert">[% c.localize('last_clouds') %] :</div>
-
 		<div id="lastcloud" class="accueilcolonnes_colonnecontent">
-			
-			[% IF last_cloud %]
-				<!-- ugly hack :/ -->
-				[% USE table_class = Class('WillCloud::Model::CDBI::Engine') %]
-				[% i = 1 %]
-				[% FOREACH cloud IN last_cloud %]
-					[% i %]. <a href="[% base _ cloud.permalink %]" onClick="window.open('[% base _ cloud.permalink %]','cloud for [% cloud.keyword %]', 'width=400,height=200,resizable=yes,scrollbars=yes');return false;" title="[% cloud.id %]">[% cloud.keyword FILTER truncate(30) %]
-						[% IF cloud.truncation == 1 %]
-							[truncation]
-						[% END %]
-						[% object = table_class.search(engine_id => cloud.engine_id) %]
-                        ([% object.name %])
-					</a><br />
-					[% i = i +1 %]
-				[% END %]
-			[% END %]
+            [% FOREACH cloud IN last_clouds %]
+                [% cloud.query  %]
+            [% END %]
 		</div>
 		<div class="accueilcolonnes_colonnebottom">&nbsp;</div>
 	</td>
+
 	<td class="small"></td>
 	<td class="big" valign="top">
 	  <div class="accueilcolonnes_colonnetop_vert"></div>
 	  <div class="accueilcolonnes_colonnetitle_vert">[% c.localize('latest_news') %] :</div>
 
 	  <div class="accueilcolonnes_colonnecontent">
-		[% message %]
-		[% i = 1 %]
-        [% FOREACH feed IN rss_blog %]
-            [% i %]. [% feed %]<br />
-            [% i = i + 1 %]
-        [% END %]
 	  </div>
 	  <div class="accueilcolonnes_colonnebottom">&nbsp;</div>
 	</td>

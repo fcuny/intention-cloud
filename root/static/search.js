@@ -10,7 +10,6 @@ $(function() {
             url: "cloud/search",
             data: dataString,
             success: function(response) {
-                alert(response);
                 $('#view').show().html(response);
                 $('#spinner').hide();
             }

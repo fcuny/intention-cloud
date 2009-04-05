@@ -1,0 +1,15 @@
+[% IF c.form.has_error %]
+    <p>[% c.localize('input_error') %]</p>
+    <ul>
+    [% IF c.form.missing('email_from') %]
+    	<li>[% c.localize('name_error') %]</li>
+    [% END %]
+    [% IF c.form.invalid('email_adr') %]
+    	<li>[% c.localize('email_error') %]</li>
+    [% END %]
+    </ul>
+[% ELSIF error %]
+	[% error %]
+[% ELSE %]
+	[% c.localize('mail_gone') %]
+[% END %]

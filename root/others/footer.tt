@@ -1,0 +1,9 @@
+	</div>
+	
+	<div id="contenudroite_cloudfooter">
+	</div>
+
+  </div>
+&nbsp;
+	</div>
+[% INCLUDE 'footer.tt' %]

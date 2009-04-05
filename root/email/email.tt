@@ -1,0 +1,36 @@
+[% INCLUDE 'header.tt' %]
+
+[% urlemail = base _ 'email/submitmail' %]
+
+
+	<div id="page_contenudroite">
+
+		<div id="contenudroite_cloudheader"></div>
+		<div id="contenudroite_cloudtitle">[% c.localize('showbyemail') %] :</div>
+ 
+			[% c.prototype.form_remote_tag( { 
+				url => urlemail, 
+				update => 'resultmail', 
+			})%]
+			<div id="contenudroite_cloudinput">
+				[% c.localize('hisemail') %] :<br>
+				<input type="text" name="email_adr" id="email_adr" class="cloudinput" size="25"><br><br>
+				[% c.localize('yourname') %] :<br>
+				<input type="text" name="email_from" id="email_from" class="cloudinput" size="25"><br><br>
+				[% c.localize('add_txt') %] ?<br>
+			 	<textarea name="email_txt" id="email_txt" cols="40" rows="8" class="cloudinput"></textarea><br>
+				<input type="submit" name="Submit" value="[% c.localize('emailsend') %]" class="seebutton">
+
+			</div>
+			</form>
+
+
+		<div id="resultmail"></div>
+		
+		<div id="contenudroite_cloudfooter"></div>
+
+ 	</div>
+	&nbsp;
+</div>
+
+[% INCLUDE 'footer.tt' %]

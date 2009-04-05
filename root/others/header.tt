@@ -1,0 +1,19 @@
+[% INCLUDE 'header.tt' %]
+
+ <div id="page_contenudroite">
+
+	<div id="contenudroite_cloudheader"></div>
+	<div id="contenudroite_cloudtitle">[% c.localize('about') %] :</div>
+	<div id="contenudroite_cloudcontent">
+
+	  <div id="cloudcontent_subnavcontainer">
+	  <table width="730" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="[% base %]about" class="subnavitem">[% c.localize('what') %]</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="[% base %]why" class="subnavitem">[% c.localize('why') %]</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="[% base %]how" class="subnavitem">[% c.localize('how') %]</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="[% base %]who" class="subnavitem">[% c.localize('who') %]</a></td>
+
+	  </tr>
+	  </table>
+	</div>

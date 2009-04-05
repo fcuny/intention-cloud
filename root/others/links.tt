@@ -1,0 +1,114 @@
+[% INCLUDE 'header.tt' %]
+
+ <div id="page_contenudroite">
+
+	<div id="contenudroite_cloudheader"></div>
+	<div id="contenudroite_cloudtitle">links :</div>
+	<div id="contenudroite_cloudcontent">
+
+	  <div id="cloudcontent_subnavcontainer">
+	  <table width="730" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="#intentions" class="subnavitem">Intentions</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="#clouds" class="subnavitem">Clouds</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="#others" class="subnavitem">Others</a></td>
+		<td class="cloudcontent_subnavitem" onMouseOver="this.className='cloudcontent_subnavitem_hover';" onMouseOut="this.className='cloudcontent_subnavitem';"><a href="#friends" class="subnavitem">Community</a></td>
+
+	  </tr>
+	  </table>
+	  </div>
+	  
+	  <div id="cloudcontent_subtitle"><a name="intentions">Intentions</a> :</div>
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://battellemedia.com/" target="_blank"><b>John Battelle's Searchblog</b></a><br>
+     Thoughts on the intersection of search, media, technology, and more. He pinpointed the "Database of Intentions".
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.wordtracker.com/" target="_blank"><b>Wordtracker</b></a><br>
+	  Powerful tool. 'Find the best keywords for your website'. Based on data from meta search engines.
+	  </div>
+	  
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://inventory.overture.com/" target="_blank"><b>Overture Keyword Selector</b></a><br>
+	  Keywords research tool for Yahoo Search Marketing. Displays how many times a certain keyword was searched for in a given month.
+	  </div>
+	  
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.nichebot.com/" target="_blank"><b>Nichebot</b></a><br>
+	  Meta-tool, Based on Wordtracker, Overture and Google tools. "Finds exactly what people search for" so you can... Target the right keywords for better search engine placement! 
+	  </div>
+	  
+	  <div id="cloudcontent_paragraph">
+	  <a href="https://adwords.google.com/select/KeywordToolExternal" target="_blank"><b>AdWords Keyword Sandbox</b></a><br>
+	  New version of Google's Keyword researching tool. The Keyword Tool generates potential keywords for your ad campaigns and reports their Google statistics, including search performance and seasonal trends.
+	  </div>
+	  
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.google.com/press/zeitgeist.html#" target="_blank"><b>Google Zeitgeist</b></a><br>
+	  Zeitgeist: Search patterns, trends, and surprises
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://current.tv/google" target="_blank"><b>Google Current</b></a><br>
+	  Google Current airs every half hour on Current TV and provides a look at what the world is searching for on Google.
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.morekeywords.com/" target="_blank"><b>MoreKeywords</b></a><br>
+	  Keyword research tool. The other 'Intention Cloud' named Keyword Cloud is based on this. We were unable to find proper documentation on the inner workings of this too.
+	  </div>
+	  
+	  <br/><br/>
+	  
+	  <div id="cloudcontent_subtitle"><a name="clouds">Clouds</a> :</div>  
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://en.wikipedia.org/wiki/Tag_cloud" target="_blank"><b>Wikipedia's Article</b></a><br>
+	  Article on wikipedia about Tag Clouds
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://blog.pietrosperoni.it/2005/05/25/tag-clouds-metric/" target="_blank"><b>Article</b></a><br>
+		On Tag Clouds, Metric, Tag Sets and Power Laws
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://coelomic.wordpress.com/2006/01/02/tag-clouds/" target="_blank"><b>Article</b></a><br>
+	  In search of the perfect Tag Cloud
+	  </div>
+	  
+	  <br/><br/>
+	  
+	  <div id="cloudcontent_subtitle"><a name="others">Others</a> :</div>  
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.keywordcloud.com/" target="_blank"><b>KeywordCloud</b></a><br>
+	  A research service that displays keyword popularity in cloud format. powered by MoreKeywords. 
+	  </div>
+	  
+	  <br/><br/>
+	  
+	  <div id="cloudcontent_subtitle"><a name="friends">Community</a> :</div>  
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.tirnan0g.org/" target="_blank"><b>Tir Na nOg</b></a><br>
+	  Our home
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.breizhdev.net/" target="_blank"><b>BreizhDev</b></a><br>
+	  Our secondary home, for developpement purposes
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.bwoup.com" target="_blank"><b>Bwoup</b></a><br>
+	  The art of Morgan "Splif" Thomas
+	  </div>
+
+	  <div id="cloudcontent_paragraph">
+	  <a href="http://www.aegis-corp.org" target="_blank"><b>Aegis Corp</b></a><br>
+	  Friends. Thank you guys, always been a pleasure to hang around with you :)
+	  </div>
+
+[% INCLUDE 'others/footer.tt' %]

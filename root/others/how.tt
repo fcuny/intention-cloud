@@ -1,0 +1,23 @@
+[% INCLUDE 'others/header.tt' %]
+
+	  <div id="cloudcontent_subtitle">[% c.localize('how') %] :</div>
+	
+		<div id="cloudcontent_paragraph">
+			<strong>
+				[% c.localize('howtitle1') %]
+			</strong><br/><br />
+			[% c.localize('howpar1') %]
+		</div>
+		
+		<div id="cloudcontent_paragraph">
+			[% c.localize('howpar2') %]
+		</div>
+		
+		<div id="cloudcontent_paragraph">
+			<strong>
+				[% c.localize('source') %]
+			</strong>
+			[% c.localize('howpar3') %]
+		</div>
+		
+[% INCLUDE 'others/footer.tt' %]

@@ -1,0 +1,54 @@
+[% INCLUDE 'others/header.tt' %]
+
+	  <div id="cloudcontent_subtitle">[% c.localize('who') %] :</div>
+	
+		<div id="cloudcontent_paragraph">
+			<ul>
+				<li>
+					<span class="who">Franck Cuny</span>
+					<br/>
+					<br/>developement.
+					<br/>Website: http://www.breizhdev.net
+					<br/>E-Mail: <a href="mailto:franck[att]breizhdev[dott]net">franck[att]breizhdev[dott]net</a>
+
+					<br/><br/>
+				</li>
+				
+				<li>
+					<span class="who">Morgan 'Splif' Thomas</span>				
+					<br/>
+					<br/>graphic design, illustration.
+					<br/>Website: http://www.bwoup.com
+					<br/>E-Mail: <a href="mailto:bwoup[att]bwoup[dott]com">bwoup[att]bwoup[dott]com</a>
+					<br/><br/>
+				</li>
+
+				<li><span class="who">az</span>
+					 <br/>
+					 <br/>concept. what if?
+					 <br/>Website: http://www.tirnan0g.org
+					 <br/>E-Mail:  <a href="mailto:az[att]breizhdev[dott]net">az[att]breizhdev[dott]net</a>
+					<br/><br/>
+				</li>
+				
+				<li><span class="who">bl0b</span>
+					 <br/>
+					 <br/>Translation
+					 <br/>Website: http://projects.breizhdev.net/bl0b_dev/
+					 <br/>E-Mail:  <a href="mailto:bl0b[att]breizhdev[dott]net">bl0b[att]breizhdev[dott]net</a>
+					<br/><br/>
+				</li>
+				
+				<li><span class="who">T</span>
+					 <br/>
+					 <br/>Translation
+					 <br/>Website: http://www.google.com
+					 <br/>E-Mail:  <a href="mailto:none">none</a>
+					<br/><br/>
+				</li>				
+				
+				
+			</ul>
+		</div>
+		
+[% INCLUDE 'others/footer.tt' %]

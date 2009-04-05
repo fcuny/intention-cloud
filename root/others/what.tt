@@ -1,0 +1,41 @@
+[% INCLUDE 'others/header.tt' %]
+
+	  <div id="cloudcontent_subtitle">[% c.localize('what') %] :</div>
+	
+		<div id="cloudcontent_paragraph">
+			[% c.localize('whatpar1') %]
+		</div>
+		
+		<h1>[% c.localize('whath1') %]</h1>
+		
+		<div id="cloudcontent_paragraph">
+			[% c.localize('whatpar2') %]
+		</div>
+		
+		<div id="cloudcontent_paragraph">
+			<strong>
+				[% c.localize('whatdbi') %]
+			</strong>
+			[% c.localize('whatpar3') %]
+			<br/><br/>
+			<cite>
+				[% c.localize('whatpar4') %]
+			</cite>
+		</div>
+		
+		<div id="cloudcontent_paragraph">  
+			  [% c.localize('whatpar5') %]
+	 	</div>
+	
+		<div id="cloudcontent_paragraph">
+			<strong>
+				[% c.localize('tagcloud') %]
+			</strong> 
+			[% c.localize('whatpar6') %]
+		</div>
+
+		<div id="cloudcontent_paragraph">
+			[% c.localize('whatpar7') %]
+		</div>
+		
+[% INCLUDE 'others/footer.tt' %]

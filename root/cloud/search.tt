@@ -1,0 +1,93 @@
+[% INCLUDE 'header.tt' %]
+
+<div id="page_contenudroite">
+    <div id="contenudroite_cloudheader"></div>
+	<div id="contenudroite_cloudtitle">1. [% c.localize('intention') %] :</div>
+	<div id="contenudroite_cloudinput">
+        <form name="form_search" method="post" action="">
+	  	    <input type="text" id="q" name="q" class="cloudinput" size="25" value="[% query_parameters %]" />
+      	    <input type="submit" name="Submit" id="submit" value="[% c.localize('seebutton') %]" class="seebutton" />
+		    <img id="spinner" style="display:none;" src="[%base%]static/images/spinner.gif" alt="loading">
+		    <br>
+
+		    <select name="engine"></select>
+                
+	  	    <input id="truncature" type="checkbox" name="truncation" value="1" class="truncationcheckbox" />
+                [% c.localize('truncation') %]
+		</form>
+		
+	</div>
+		
+	<div id="view"></div>
+
+	<div id="contenudroite_cloudfooter"></div>
+
+  </div>
+&nbsp;
+</div>
+
+<!-- UNIQUEMENT EN PAGE D'ACCUEIL/CLOUD -->
+<div id="page_accueilcolonnes">
+  <table width="920" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td class="small"></td>
+	<td class="big">
+	  <div id="accueilcolonnes_colonnecontent_void">
+	  <img src="[% base %]static/images/accueilcolonnes_p_ic.gif" alt="IC">
+		  [% c.localize('shortexplain') %]
+	  </div>
+	</td>
+	<td class="small"></td>
+	<td class="big">
+	  <div id="accueilcolonnes_colonnetop_bleu"></div>
+	  <div id="accueilcolonnes_colonnetitle_bleu">[% c.localize('fluffier') %] :</div>
+	  <div class="accueilcolonnes_colonnecontent">
+	  </div>
+	  <div class="accueilcolonnes_colonnebottom">&nbsp;</div>
+	</td>
+	<td class="small"></td>
+	<td class="big">
+	  <div class="accueilcolonnes_colonnetop_vert"></div>
+	  <div class="accueilcolonnes_colonnetitle_vert">[% c.localize('last_clouds') %] :</div>
+
+		<div id="lastcloud" class="accueilcolonnes_colonnecontent">
+			
+			[% IF last_cloud %]
+				<!-- ugly hack :/ -->
+				[% USE table_class = Class('WillCloud::Model::CDBI::Engine') %]
+				[% i = 1 %]
+				[% FOREACH cloud IN last_cloud %]
+					[% i %]. <a href="[% base _ cloud.permalink %]" onClick="window.open('[% base _ cloud.permalink %]','cloud for [% cloud.keyword %]', 'width=400,height=200,resizable=yes,scrollbars=yes');return false;" title="[% cloud.id %]">[% cloud.keyword FILTER truncate(30) %]
+						[% IF cloud.truncation == 1 %]
+							[truncation]
+						[% END %]
+						[% object = table_class.search(engine_id => cloud.engine_id) %]
+                        ([% object.name %])
+					</a><br />
+					[% i = i +1 %]
+				[% END %]
+			[% END %]
+		</div>
+		<div class="accueilcolonnes_colonnebottom">&nbsp;</div>
+	</td>
+	<td class="small"></td>
+	<td class="big" valign="top">
+	  <div class="accueilcolonnes_colonnetop_vert"></div>
+	  <div class="accueilcolonnes_colonnetitle_vert">[% c.localize('latest_news') %] :</div>
+
+	  <div class="accueilcolonnes_colonnecontent">
+		[% message %]
+		[% i = 1 %]
+        [% FOREACH feed IN rss_blog %]
+            [% i %]. [% feed %]<br />
+            [% i = i + 1 %]
+        [% END %]
+	  </div>
+	  <div class="accueilcolonnes_colonnebottom">&nbsp;</div>
+	</td>
+	<td class="small"></td>
+	</tr>
+  </table>
+</div>
+
+[% INCLUDE 'footer.tt' %]

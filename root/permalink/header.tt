@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+
+<head>
+	<title>Intention Cloud</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="[% base %]static/css/ic_cloudcolors.css" type="text/css">
+	<link rel="stylesheet" href="[% base %]static/css/ic.css" type="text/css">
+	
+	<link rel="icon" href="[% base %]favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="[% base %]favicon.ico" type="image/x-icon"	>
+</head>
+
+<body id="globalpage" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- CONTENU -->
+<div>

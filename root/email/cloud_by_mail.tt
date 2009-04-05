@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+
+<head>
+	<title>Intention Cloud</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<div id="page_container" style="width: 950px;text-align: left;margin: 0px auto;top: 0px;background-color: #DEFBFF;">
+
+  <div id="page_margegauche" style="float: left;width: 200px;">
+
+    <div id="ic_logo" style="float: left;width: 200px;height: 34px;">	
+    </div>
+	
+  </div>
+
+  <div id="page_contenudroite" style="float: left;width: 750px;">
+
+	<div id="contenudroite_cloudtitle" style="width: 730px;padding-left: 10px;padding-right: 10px;font-size: 32px;color: #6AB701;">
+		this cloud has been sent to you by [% email_from %]<br />
+		"[% email_txt %]"<br />
+		"[% email_txt %]"
+	</div>
+	[% cloud %]
+
+	<div id="contenudroite_cloudfooter" style="width: 750px;height: 210px;">
+	</div>
+
+  </div>
+&nbsp;
+
+</div>
+
+
+<div id="page_footer" style="clear: left;width: 943px;padding-top: 5px;padding-bottom: 2px;padding-left: 5px;padding-right: 2px;text-align: right;margin: 0px auto;top: 0px;background-color: #8ACC03;font-size: 10px;color: #166800;">
+(c) breizhdev 2006 blablablablabla <a href="http://www.bwoup.com" target="_blank"><img src="[% base %]static/images/p_bwoup.gif" border="0" width="12" height="12" alt="design : bwoup.com" align="absbottom"></a>
+</div>
+
+</body>
+
+</html>

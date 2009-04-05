@@ -1,0 +1,12 @@
+[% i = 1 %]
+[% USE table_class = Class('WillCloud::Model::CDBI::Engine') %]
+[% FOREACH cloud IN last_cloud %]
+	[% i %]. <a href="[% base _ cloud.permalink %]" onClick="window.open('[% base _ cloud.permalink %]','cloud for [% cloud.keyword %]', 'width=400,height=200,resizable=yes,scrollbars=yes');return false;" title="[% cloud.id %]">[% cloud.keyword FILTER truncate(30) %]
+		[% IF cloud.truncation == 1 %]
+			[truncation]
+		[% END %]
+		[% object = table_class.search(engine_id => cloud.engine_id) %]
+        ([% object.name %])
+	</a><br />
+	[% i = i +1 %]
+[% END %]

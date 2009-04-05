@@ -12,7 +12,7 @@ sub search {
     my $search = $c->req->params->{ q } . " ";
     $c->stash( query => $search, dt => DateTime->now );
 
-    $c->stash(cloud_permalink => $c->stash->{dt}->ymd( '/' ) . '/'
+    $c->stash(cloud_permalink => $c->stash->{ dt }->ymd( '/' ) . '/'
             . $c->req->params->{ engine } . '/'
             . uri_escape( $c->req->params->{ q } ) );
     my $cloud = $c->model( 'DB::Search' )
@@ -35,16 +35,21 @@ sub google_search {
     my $suggest = WebService::Google::Suggest->new();
 
     my $suggests = 0;
-    foreach ( $suggest->complete( $search ) ) {
-        $suggests++;
-        if ( $_->{ results } > 0 ) {
-            $cloud->add( $_->{ query }, 'blah', $_->{ results } );
+    eval {
+        foreach ( $suggest->complete( $search ) )
+        {
+            $suggests++;
+            if ( $_->{ results } > 0 ) {
+                $cloud->add( $_->{ query }, 'blah', $_->{ results } );
+            }
         }
-    }
-    if ( $suggests ) {
-        $c->stash( cloud => $cloud->html_and_css() );
-    } else {
+    };
+    if ( $@ ) {
+        $c->stash( no_suggest => "the clouds seems broken" );
+    } elsif ( !$suggests ) {
         $c->stash( no_suggest => "no suggestions :(" );
+    } else {
+        $c->stash( cloud => $cloud->html_and_css() );
     }
 }
 
@@ -54,7 +59,7 @@ sub save_search {
     $c->model( 'DB::Search' )->create(
         {   engine       => $c->req->params->{ engine },
             cloud        => $c->stash->{ cloud },
-            date_created => $c->stash->{dt},
+            date_created => $c->stash->{ dt },
             query        => $c->req->params->{ q },
             permalink    => $c->stash->{ cloud_permalink },
         }

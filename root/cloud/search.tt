@@ -56,7 +56,7 @@
 	  <div class="accueilcolonnes_colonnetitle_vert">[% c.localize('last_clouds') %] :</div>
 		<div id="lastcloud" class="accueilcolonnes_colonnecontent">
             [% FOREACH cloud IN last_clouds %]
-                [% cloud.query  %]
+                <a href="/[% cloud.permalink %]">[% cloud.query  %]</a><br />
             [% END %]
 		</div>
 		<div class="accueilcolonnes_colonnebottom">&nbsp;</div>

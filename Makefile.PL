@@ -13,6 +13,8 @@ requires 'parent';
 requires 'Config::General'; # This should reflect the config file format you've chosen
                  # See Catalyst::Plugin::ConfigLoader for supported formats
 catalyst;
+requires 'WebService::Google::Suggest';
+requires 'HTML::TagCloud';
 
 install_script glob('script/*.pl');
 auto_install;

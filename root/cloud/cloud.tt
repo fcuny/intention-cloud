@@ -6,5 +6,10 @@
         > <a href="/[% cloud_permalink %]">[% c.localize('permalinkstr') %]</a><br />
     </div>
 
-    <div id="cloud">[% cloud %]</div>
+    [% IF cloud %] 
+        <div id="cloud">[% cloud %]</div>
+    [% ELSE %]
+        <div id="error">[% no_suggest %]</div>
+    [% END %]
+
 </div>

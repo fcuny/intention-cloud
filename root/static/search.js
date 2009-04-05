@@ -3,12 +3,12 @@ $(function() {
         $('#spinner').show();
         $('#view').hide();
         var q = $("input#q").val();
-        var dataString = 'q='+ q;
+        var engine= $("select#engine").val();
+        var dataString = 'q='+ q + '&engine=' + engine;
         $.ajax({
             type: "POST",
-            url: "search",
+            url: "cloud/search",
             data: dataString,
-            //dataType: "json",
             success: function(response) {
                 alert(response);
                 $('#view').show().html(response);
@@ -17,4 +17,17 @@ $(function() {
         });
         return false;
     });
+    $("#random_cloud").click(function(){
+        $('#spinner').show();
+        $.ajax({
+            type: "GET",
+            url: "cloud/random",
+            success: function(response) {
+                $('#view').show().html(response);
+                $('#spinner').hide();
+            }
+        });
+        return false;
+    });
+
 });

@@ -1,9 +1,13 @@
 <div id="wrapper">
-    <div id="contenudroite_cloudtitle">2. [% c.localize('cloudtitle') %] "<i>[% cloud.query %]</i>"</div>
-    <div id="contenudroite_cloudcontent">
-		
-    <div id="cloudcontent_options">
-        > <a href="/[% cloud.permalink %]">[% c.localize('permalinkstr') %]</a><br>
-    </div>
-    <div id="cloud">[% cloud.cloud %]</div>
+    [% IF cloud %]
+        <div id="contenudroite_cloudtitle">2. [% c.localize('cloudtitle') %] "<i>[% cloud.query %]</i>"</div>
+        <div id="contenudroite_cloudcontent">
+            
+        <div id="cloudcontent_options">
+            > <a href="/[% cloud.permalink %]">[% c.localize('permalinkstr') %]</a><br>
+        </div>
+        <div id="cloud">[% cloud.cloud %]</div>
+    [% ELSE %]
+        nothing yet :(
+    [% END %]
 </div>

@@ -1,9 +1,0 @@
-[% 
-INCLUDE 'permalink/header.tt';
-IF error;
-	error;
-ELSE;
-	permalink_data;
-END;
-INCLUDE 'permalink/footer.tt';
- %]

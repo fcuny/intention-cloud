@@ -29,13 +29,32 @@ sub how : Local {
 sub index : Local {
     my ( $self, $c ) = @_;
     $c->stash->{ template } = 'cloud/search.tt';
-    $c->stash( last_clouds =>
-            [ $c->model( 'DB::Search' )->search()->slice( 0, 2 ) ] );
+    $c->stash(
+        last_clouds => [ $c->model( 'DB::Search' )->search()->slice( 0, 2 ) ]
+    );
+}
+
+sub lang : Regex('^lang/(\w{2})$') {
+    my ( $self, $c ) = @_;
+
+    my $lang = $c->req->captures->[ 0 ];
+    $c->languages( $lang );
+    $c->session->{ lang } = $lang;
+    if ( $c->session->{ referer } ) {
+        $c->stash->{ template } = $c->session->{ referer };
+    } else {
+
+        $c->forward( '/index' );
+    }
 }
 
 sub end : ActionClass('RenderView') {
     my ( $self, $c ) = @_;
-    $c->forward('intentioncloud::View::TT');
+    $c->session->{referer} = $c->stash->{template};
+    if (defined $c->session->{'lang'}){
+        $c->languages( [ $c->session->{'lang'} ]);
+    }
+    $c->forward( 'intentioncloud::View::TT' );
 }
 
 1;

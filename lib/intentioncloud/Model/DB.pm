@@ -5,10 +5,6 @@ use base 'Catalyst::Model::DBIC::Schema';
 
 __PACKAGE__->config(
     schema_class => 'intentioncloud::Schema',
-    connect_info => [
-        'dbi:SQLite:intentioncloud.db',
-        
-    ],
 );
 
 1;
